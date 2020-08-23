@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?ux4w1b');
+  src:  url('fonts/icomoon.eot?ux4w1b#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ux4w1b') format('truetype'),
+    url('fonts/icomoon.woff?ux4w1b') format('woff'),
+    url('fonts/icomoon.svg?ux4w1b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+  padding-right: 0.5rem;
+  content: "\e905";
+}
+.icon-profile:before {
+  padding-right: 0.5rem;
+  content: "\e923";
+}
+.icon-stack:before {
+  padding-right: 0.5rem;
+  content: "\e92e";
+}
+.icon-mobile:before {
+  padding-right: 0.5rem;
+  content: "\e958";
+}
+.icon-user-tie:before {
+  padding-right: 0.5rem;
+  content: "\e976";
+}
+.icon-cog:before {
+  padding-right: 0.5rem;
+  content: "\e994";
+}
+.icon-rocket:before {
+  padding-right: 0.5rem;
+  content: "\e9a5";
+}
+.icon-accessibility:before {
+  padding-right: 0.5rem;
+  content: "\e9b2";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-earth:before {
+  padding-right: 0.5rem;
+  content: "\e9ca";
+}
+.icon-link:before {
+  padding-right: 0.5rem;
+  content: "\e9cb";
+}
+.icon-happy:before {
+  padding-right: 0.5rem;
+  content: "\e9df";
+}
+.icon-superscript2:before {
+  padding-right: 0.5rem;
+  content: "\ea6b";
+}
+.icon-google-plus2:before {
+  font-size: 30px;
+  padding-right: 0.5rem;
+  content: "\ea8d";
+}
+.icon-google-plus3:before {
+  font-size: 30px;
+  padding-right: 0.5rem;
+  content: "\ea8d";
+  color: #0d1d68;
+}
+.icon-github:before {
+  font-size: 30px;
+  padding-right: 0.5rem;
+  content: "\eab0";
+  color: #0d1d68;
+}
+.icon-linkedin:before {
+  font-size: 30px;
+  padding-right: 0.5rem;
+  content: "\eac9";
+  color: #0d1d68;
+}
+.icon-file-pdf:before {
+  padding-right: 0.5rem;
+  content: "\eadf";
+}

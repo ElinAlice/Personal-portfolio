@@ -1,0 +1,23 @@
+{
+  "name": "personal-portfolio.git",
+  "version": "1.0.0",
+  "description": "My professional profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElinAlice/Personal-portfolio.git"
+  },
+  "author": "Nelida Alicia Alvarez Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElinAlice/Personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/ElinAlice/Personal-portfolio#readme",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
