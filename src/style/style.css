@@ -2,12 +2,12 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
-/* .clsMenu{
-    width: 100%;
-    padding: 0rem 8rem 0rem 8rem;
-} */
+html{
+    scroll-behavior: smooth;
+}
 .containerMenu{
     position: relative;
+    margin-top: -1rem;
 }
 .clsMenu{
     display: flex;
@@ -74,14 +74,6 @@ nav ul li a:focus{
     flex-direction: column;
     animation: movimiento 20s infinite linear alternate;
 }
-
-@keyframes movimiento{
-    from{
-        background-position: bottom left;
-    } to {
-        background-position: top right;
-    }
-}
 .sectionWelcome:before{
     width: 100vw;
     height: 100vh;
@@ -99,7 +91,8 @@ nav ul li a:focus{
     flex-direction: column;
 }
 .clsPresentation{
-    background-color: #242424;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -196,7 +189,8 @@ p{
 } */
 
 .containerSectionProject{
-    background:#242424;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
 }
 .sectionProject{
     display: flex;
@@ -255,10 +249,15 @@ footer{
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    position: relative;
 }
 .pFooter{
     justify-content: end;
     padding-left: 3rem;
+}
+.rotateFooter{
+    /* transform: rotate(0deg); */
+    transform-origin: top center ;
 }
 .linkProject{
     display: flex;
@@ -288,6 +287,21 @@ footer{
 }
 .logoContacto{
     margin-top: 10px;
+}
+.credit{
+    background: black ;
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    } to {
+        background-position: top right;
+    }
+}
+@keyframes mover{
+    0%{
+        transform: translate(100%);
+    }
 }
 
 /* Screen size:  iPads, Tablets. */
@@ -405,6 +419,10 @@ footer{
         width: 100px;
         height: 80px;
     }
+    .imgSkillPost{
+        width: 100px;
+        height: 100px;
+    }
     .containerSectionProject{
         padding-bottom: 5rem;
     }
@@ -443,7 +461,8 @@ footer{
     #hProjects{
         padding-left: 10rem;
     }
-    footer{
+    .rotateFooter{
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ElinAlice/Personal-portfolio#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "serve": "^11.3.2"
   }
 }
