@@ -86,12 +86,14 @@
   padding-right: 0.5rem;
   content: "\ea8d";
   color: #0d1d68;
+  margin-top: 0.5rem;
 }
 .icon-github:before {
   font-size: 30px;
   padding-right: 0.5rem;
   content: "\eab0";
   color: #0d1d68;
+  margin-top: 0.5rem;
 }
 .icon-linkedin:before {
   font-size: 30px;
