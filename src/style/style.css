@@ -254,6 +254,7 @@ footer{
 .pFooter{
     justify-content: end;
     padding-left: 3rem;
+    color: #3d5046;
 }
 .rotateFooter{
     /* transform: rotate(0deg); */
@@ -271,6 +272,7 @@ footer{
     justify-content: end;
     padding-left: 1.5rem;
     font-size: 25px;
+    color: #3d5046;
 }
 .containerStatic{
     width: 25px;
@@ -278,7 +280,7 @@ footer{
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    background: #ffe9c5a9;
+    background: #242424af;
     position: fixed;
     z-index: 100;
     right: 0;
@@ -288,8 +290,18 @@ footer{
 .logoContacto{
     margin-top: 10px;
 }
-.credit{
-    background: black ;
+
+.linkCv{
+    color: #3d5046;
+}
+.traslateEnglish{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    position: relative;
+    /* margin-top: -5rem; */
+    /* padding-right: 2rem; */
 }
 @keyframes movimiento{
     from{
@@ -324,6 +336,30 @@ footer{
         height: 80px;
     }
 }
+
+  .icon-github:before {
+    font-size: 30px;
+    padding-right: 0.5rem;
+    color: #0d1d68;
+    margin-top: 0.5rem;
+  }
+  .icon-linkedin:before {
+    font-size: 30px;
+    padding-right: 0.5rem;
+    color: #0d1d68;
+  }
+  .icon-whatsapp{
+    font-size: 30px;
+    padding-right: 0.5rem;
+    color: #0d1d68;
+  }
+  .icon-g_translate{
+    font-size: 30px;
+    color: #0d1d68;
+  }
+
+
+
 
 /* Screen size: Small screens, laptops. */
 @media screen and (min-width : 768px){
