@@ -23,6 +23,8 @@ btOptions.forEach(btOption => {
     });
 });
 
+
+
 const translator = document.querySelector('#idTraslator');
 translator.addEventListener("click", () => {
     const presentation = document.querySelector('#presentation');
@@ -38,6 +40,14 @@ translator.addEventListener("click", () => {
     const contactame = document.querySelector('#contactame');
     const information = document.querySelector('#information');
     const cv = document.querySelector('#cv');
+    const iconTraslate = document.querySelector('.icon-translate');
+
+    if(iconTraslate.style.color === 'white' || iconTraslate.style.color === '') {
+        console.log('cambia amarillo');
+        iconTraslate.style.color = '#a7a216';
+    } else {
+        iconTraslate.style.color = 'white';
+    }
 
     if(presentation.textContent === 'Sobre mi') {
         presentation.textContent = 'About me';
@@ -83,9 +93,8 @@ translator.addEventListener("click", () => {
     } else {
         detailCardValidation.textContent = 'Aplicación web que permite al usuario validar el número de una tarjeta de crédito.'
     }
-    console.log(detailDataLovers.textContent.trim());
+
     if(detailDataLovers.textContent.trim() === "Aplicación web que muestra de manera dinámica y categórica la información de cada Pokémon, para usuarios de nivel principiante.") {
-        console.log('datalover');
         detailDataLovers.textContent = 'Web application that dynamically and categorically displays the information of each Pokémon, for beginner-level users';
     } else {
         detailDataLovers.textContent = 'Aplicación web que muestra de manera dinámica y categórica la información de cada Pokémon, para usuarios de nivel principiante.';
