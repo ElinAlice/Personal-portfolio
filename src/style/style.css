@@ -312,7 +312,9 @@ footer{
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
+    cursor: pointer;
 }
+
 @keyframes movimiento{
     from{
         background-position: bottom left;
