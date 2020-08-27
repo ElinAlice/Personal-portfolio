@@ -344,6 +344,7 @@ footer{
   }
   .icon-translate{
     font-size: 32px;
+    color: white;
 }
 
 
@@ -515,6 +516,9 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    .traslateEnglish{
+        top: 2.5rem;
     }
     
 }
