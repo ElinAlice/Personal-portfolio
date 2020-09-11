@@ -31,6 +31,7 @@ translator.addEventListener("click", () => {
     const projects = document.querySelector('#projects');
     const contactMe = document.querySelector('#contactMe');
     const desciption = document.querySelector('#desciption');
+    const lemaPersonal = document.querySelector('#lemaPersonal');
     const hProjects = document.querySelector('#hProjects');
     const detailCardValidation = document.querySelector('#detailCardValidation');
     const detailDataLovers = document.querySelector('#detailDataLovers');
@@ -43,7 +44,6 @@ translator.addEventListener("click", () => {
     const iconTraslate = document.querySelector('.icon-translate');
 
     if(iconTraslate.style.color === 'white' || iconTraslate.style.color === '') {
-        console.log('cambia amarillo');
         iconTraslate.style.color = '#a7a216';
     } else {
         iconTraslate.style.color = 'white';
@@ -67,20 +67,38 @@ translator.addEventListener("click", () => {
         contactMe.textContent = 'Contáctame';
     }
 
-    if(desciption.innerHTML.trim() === `Hola soy Nelida:
-                            <br>
-                            Me encanta el diseño web, me gusta aprender y ser comprometida con lo que hago. 
-                            Amo la naturaleza y a la vez la tecnología. Me adapto al cambio de manera rápida.`) {
+    console.log(desciption.dataset.description);
+    if(desciption.dataset.description === 'spanish') {
+        console.log('ingles' + desciption);
+        desciption.dataset.description = 'english'
         desciption.innerHTML = `Hi, I'm Nelida:
                                     <br>
-                                    I love web design, I like to learn and be committed to what I do. 
-                                    I love nature and technology at the same time. I adapt to change quickly.`
+                                    <br>
+                                    I am a front end developer, with a career in Computer Science and Systems Engineering,
+                                    I am passionate about technology, which is why I want to be part of its transformation;
+                                    I love facing new challenges, because I know they will help me strengthen
+                                    my skills and discover others.
+                                    <br>
+                                    I love nature and I value it very much.`
     } else {
+        console.log('español' + desciption);
+        desciption.dataset.description = 'spanish'
         desciption.innerHTML = `Hola soy Nelida:
-                            <br>
-                            Me encanta el diseño web, me gusta aprender y ser comprometida con lo que hago. 
-                            Amo la naturaleza y a la vez la tecnología. Me adapto al cambio de manera rápida.`
+                                <br>
+                                <br>
+                                Soy Front end developer, con una carrera en Ingeniería de Informática y Sistemas, 
+                                me apasiona la tecnología, razón por la quiero ser parte de su transformación; 
+                                me encanta enfrentarme a nuevos retos, por que sé que me ayudarán a fortalecer 
+                                mis habilidades y a descubrir otras.
+                                <br>
+                                Amo la naturaleza y la valoro mucho.`
     }
+
+    if(lemaPersonal.innerHTML.trim() === `💪🏼¡Con miedo o sin miedo atrévete!👊🏼`) {
+        lemaPersonal.innerHTML = `💪🏼With fear or without fear, dare!👊🏼`
+    } else {
+        lemaPersonal.innerHTML = `💪🏼¡Con miedo o sin miedo atrévete!👊🏼`
+    }  
 
     if(hProjects.textContent === 'Proyectos:') {
         hProjects.textContent = 'Projects:';

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?9qhxmz');
-  src:  url('fonts/icomoon.eot?9qhxmz#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?9qhxmz') format('truetype'),
-    url('fonts/icomoon.woff?9qhxmz') format('woff'),
-    url('fonts/icomoon.svg?9qhxmz#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?evp79c');
+  src:  url('fonts/icomoon.eot?evp79c#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?evp79c') format('truetype'),
+    url('fonts/icomoon.woff?evp79c') format('woff'),
+    url('fonts/icomoon.svg?evp79c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -34,12 +34,8 @@
 .icon-stack:before {
   content: "\e92e";
 }
-.icon-mobile1:before {
-  content: "\e958";
-}
 .icon-mobile:before {
   content: "\e958";
-  padding-right: 0.5rem;
 }
 .icon--user-tie:before {
   content: "\e976";
@@ -55,6 +51,9 @@
 }
 .icon-earth:before {
   content: "\e9ca";
+}
+.icon-link:before {
+  content: "\e9cb";
 }
 .icon-woman:before {
   content: "\e9dd";
